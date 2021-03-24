@@ -113,7 +113,6 @@ function Datacentre() {
                   <h2 className="mb-5">Got an idea for your own app? Share with us!</h2>
                   <p className="p16 mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Lorem Ipsum is simply dummy text of the printing and Lorem Ipsum has been the industry's standard.</p>
                 </div>
-              
               <Form/>
               </div>
             </div>
