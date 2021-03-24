@@ -1,43 +1,21 @@
 import React from 'react'
-import AOS from 'aos'
+import Header from '../subcomponents/Header'
 
-import './css/aos.css'
-import './css/bootstrap.min.css'
-import './css/bootstrap-select.min.css'
-import './css/font-awesome.min.css'
-import './css/slick.css'
-import './css/style.css'
+import Footer from '../subcomponents/Footer'
+// import AOS from 'aos'
+
+// import './css/aos.css'
+// import './css/bootstrap.min.css'
+// import './css/bootstrap-select.min.css'
+// import './css/font-awesome.min.css'
+// import './css/slick.css'
+// import './css/style.css'
 
 function Howwedoit() {
-  AOS.init();
+  // AOS.init();
     return (
         <div>
-        <header>
-          <div className="container">
-            <nav className="navbar navbar-expand-md navbar-dark p-0">
-              {/* Brand */}
-              <a className="navbar-brand" href="index.html">
-                <img className="logo" src="./img/logo.png" alt="img" />
-              </a>
-              <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
-                <span className="navbar-toggler-icon" />
-              </button>
-              <div className="collapse navbar-collapse justify-content-end" id="nav">
-                <ul className="navbar-nav">
-                  <li className="nav-item">
-                    <a className="nav-link active" href="#">Our Work</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">How we do it</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Services</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </header>
+       <Header/>
         <div id="wrapper">
           <section className="section inner-page-banner-2">
             <div className="container">
@@ -298,51 +276,8 @@ function Howwedoit() {
             </div>
           </section>
         </div>
-        <footer>
-          <div className="container">
-            <div className="row">
-              <div className="col-md-4 col-lg-3">
-                <div className="logo-footer">
-                  <a href="index.html">
-                    <img src="./img/logo-footer.png" alt="img" />
-                  </a>
-                </div>
-                <div className="social-media">
-                  <ul>
-                    <li> <a className="fa fa-facebook" aria-hidden="true" href="javascript://" /> </li>
-                    <li> <a className="fa fa-twitter" aria-hidden="true" href="javascript://" /> </li>
-                    <li> <a className="fa fa-instagram" aria-hidden="true" href="javascript://" /> </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-md-4 col-lg-4">
-                <div className="contact-info">
-                  <p className="p14-dark-2 mb-3">+98 5721912323 +91 2334782819
-                    DevStory@info.com
-                  </p>
-                  <p className="p14-dark-2">Arth Prakash Building, Sector - 29D,<br /> Chandigarh 160029</p>
-                </div>
-              </div>
-              <div className="col-md-4 col-lg-5">
-                <h5 className="footer-heading">Links</h5>
-                <div className="footer-links">
-                  <ul>
-                    <li> <a href="javascript://">Services</a> </li>
-                    <li> <a href="javascript://">Live Support</a> </li>
-                  </ul>
-                  <ul>
-                    <li> <a href="javascript://">Blog</a> </li>
-                    <li> <a href="javascript://">How we do it</a> </li>
-                  </ul>
-                  <ul>
-                    <li> <a href="javascript://">Support</a> </li>
-                    <li> <a href="javascript://">Get Free Quote</a> </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
+       <Footer/>
+      
       </div>
     )
 }

@@ -1,57 +1,37 @@
 import React from 'react'
-import './css/aos.css'
-import './css/bootstrap.min.css'
-import './css/bootstrap-select.min.css'
-import './css/font-awesome.min.css'
-import './css/slick.css'
-import './css/style.css'
-import AOS from 'aos'
+import Header from '../subcomponents/Header'
+import Form from '../subcomponents/Form'
+import Footer from '../subcomponents/Footer'
+// import AOS from 'aos'
 
-function Wseo() {
-    AOS.init()
+// import './css/aos.css'
+// import './css/bootstrap.min.css'
+// import './css/bootstrap-select.min.css'
+// import './css/font-awesome.min.css'
+// import './css/slick.css'
+// import './css/style.css'
+
+
+function Development() {
+    // AOS.init();
     return (
-        
-            <div>
-        <header>
-          <div className="container">
-            <nav className="navbar navbar-expand-md navbar-dark p-0">
-              {/* Brand */}
-              <a className="navbar-brand" href="index.html">
-                <img className="logo" src="./img/logo.png" alt="img" />
-              </a>
-              <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
-                <span className="navbar-toggler-icon" />
-              </button>
-              <div className="collapse navbar-collapse justify-content-end" id="nav">
-                <ul className="navbar-nav">
-                  <li className="nav-item">
-                    <a className="nav-link active" href="#">Our Work</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">How we do it</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Services</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </header>
+        <div>
+          
+        <Header/>
         <div id="wrapper">
           <section className="section inner-page-banner">
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-lg-5 order-lg-2">
-                  <div className="fig-blk banner-img-6">
-                    <img className="img-fluid" src="./img/banner06.png" alt="img" />
+                  <div className="fig-blk banner-img-4">
+                    <img className="img-fluid" src="./img/banner04.png" alt="img" />
                   </div>
                 </div>
                 <div className="col-lg-7 order-lg-1">
                   <div className="heading-grp">
-                    <h2 className="mb-3" data-aos="fade-up" data-aos-duration={400}>100%Safe, Ethical<br />
-                      and Effective<br />
-                      Search Results<span className="yellow-color">.</span>
+                    <h2 className="mb-3" data-aos="fade-up" data-aos-duration={400}>Crafting Visually<br />
+                      Stunning Websites for<br />
+                      your Business<span className="yellow-color">.</span>
                     </h2>
                     <p className="p16-dark">By choosing the best services suitable for your story, we take things to next level</p>
                   </div>
@@ -63,7 +43,7 @@ function Wseo() {
             <div className="container">
               <div className="out-container-left" data-aos="fade-right" data-aos-duration={400}>
                 <div className="fig-blk">
-                  <img className="img-fluid" src="./img/odr-confirmed.png" alt="img" />
+                  <img className="img-fluid" src="./img/order-confirmed.png" alt="img" />
                 </div>
               </div>
               <div className="row">
@@ -76,42 +56,54 @@ function Wseo() {
               </div>
             </div>
           </section>
-          <section className="section unique-section section-padding-top text-center">
+          <section className="section unique-section section-padding-top section-padding-bottom text-center">
             <div className="container">
-              <div className="heading-grp">
+              <div className="heading-grp main-heading-spacing">
                 <h2 className="mb-3">Get Unique, visually appealing web designs.</h2>
                 <p className="p16-dark">By choosing the best services suitable for your story, we take things to next level</p>
               </div>
-            </div>
-            <div className="shape-grp">
-              <div className="yellow-shape-left"> <img src="./img/yellow-shape-left.png" alt="img" /> </div>
-              <div className="yellow-shape-right"> <img src="./img/yellow-shape-right.png" alt="img" /> </div>
-              <div className="shape-row first-shape-row">
-                <ul>
-                  <li>Intial-Analysis </li>
-                  <li className="sep"><i> <img src="./img/arrow-right.png" alt="img" /> </i></li>
-                  <li>Advance Keyword<br /> Market Research</li>
-                  <li className="sep"><i> <img src="./img/arrow-right.png" alt="img" /> </i></li>
-                  <li>Competitor<br /> Analysis</li>
-                </ul>
+              <div className="row justify-content-center">
+                <div className="col-md-4 col-6">
+                  <div className="logo-wrap" data-aos="fade-up" data-aos-duration={300}>
+                    <figure className="mb-0">
+                      <img src="./img/php.png" alt="img" />
+                      <figcaption>PHP</figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div className="col-md-4 col-6">
+                  <div className="logo-wrap" data-aos="fade-up" data-aos-duration={600}>
+                    <figure className="mb-0">
+                      <img src="./img/laravel.png" alt="img" />
+                      <figcaption>LARAVEL</figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div className="col-md-4 col-6">
+                  <div className="logo-wrap" data-aos="fade-up" data-aos-duration={900}>
+                    <figure className="mb-0">
+                      <img src="./img/node.png" alt="img" />
+                      <figcaption>NODE JS</figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div className="col-md-4 col-6">
+                  <div className="logo-wrap" data-aos="fade-up" data-aos-duration={400}>
+                    <figure className="mb-0">
+                      <img src="./img/shopifiy.png" alt="img" />
+                      <figcaption>SHOPIFY</figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div className="col-md-4 col-6">
+                  <div className="logo-wrap" data-aos="fade-up" data-aos-duration={400}>
+                    <figure className="mb-0">
+                      <img src="./img/wp.png" alt="img" />
+                      <figcaption>WORDPRESS</figcaption>
+                    </figure>
+                  </div>
+                </div>
               </div>
-              <div className="shape-row second-shape-row">
-                <ul>
-                  <li>Website and<br /> Content Optimisation</li>
-                  <li className="sep reverse-sep"><i> <img src="./img/arrow-right.png" alt="img" /> </i></li>
-                  <li>Audits and<br /> Technical Techniques</li>
-                </ul>
-              </div>
-              <div className="shape-row third-shape-row">
-                <ul>
-                  <li>Analytics Testing<br /> and Maintenance</li>
-                  <li className="sep"><i> <img src="./img/arrow-right.png" alt="img" /> </i></li>
-                  <li>Prevention<br /> and Recovery</li>
-                  <li className="sep"><i> <img src="./img/arrow-right.png" alt="img" /> </i></li>
-                  <li>Social Login</li>
-                </ul>
-              </div>
-              <div className="clearfix" />
             </div>
           </section>
           <section className="section white-section contact-form-center section-padding-top section-padding-bottom">
@@ -122,37 +114,7 @@ function Wseo() {
                     <h2 className="mb-5">Got an idea for your own app? Share with us!</h2>
                     <p className="p16 mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Lorem Ipsum is simply dummy text of the printing and Lorem Ipsum has been the industry's standard.</p>
                   </div>
-                  <form>
-                    <div className="row">
-                      <div className="col-sm-6">
-                        <div className="form-group">
-                          <input className="form-control" type="text" name placeholder="Name" />
-                        </div>
-                      </div>
-                      <div className="col-sm-6">
-                        <div className="form-group">
-                          <input className="form-control" type="text" name placeholder="Email" />
-                        </div>
-                      </div>
-                      <div className="col-sm-6">
-                        <div className="form-group">
-                          <input className="form-control" type="text" name placeholder="Phone Number" />
-                        </div>
-                      </div>
-                      <div className="col-sm-6">
-                        <select className="selectpicker">
-                          <option>What is app about?</option>
-                          <option>What is app about?</option>
-                          <option>What is app about?</option>
-                        </select>
-                      </div>
-                      <div className="col-12">
-                        <div className="btn-blk text-center">
-                          <button className="btn btn-primary btn-lg">Submit</button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
+                  <Form/>
                 </div>
               </div>
             </div>
@@ -259,54 +221,10 @@ function Wseo() {
             </div>
           </section>
         </div>
-        <footer>
-          <div className="container">
-            <div className="row">
-              <div className="col-md-4 col-lg-3">
-                <div className="logo-footer">
-                  <a href="index.html">
-                    <img src="./img/logo-footer.png" alt="img" />
-                  </a>
-                </div>
-                <div className="social-media">
-                  <ul>
-                    <li> <a className="fa fa-facebook" aria-hidden="true" href="javascript://" /> </li>
-                    <li> <a className="fa fa-twitter" aria-hidden="true" href="javascript://" /> </li>
-                    <li> <a className="fa fa-instagram" aria-hidden="true" href="javascript://" /> </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-md-4 col-lg-4">
-                <div className="contact-info">
-                  <p className="p14-dark-2 mb-3">+98 5721912323 +91 2334782819
-                    DevStory@info.com
-                  </p>
-                  <p className="p14-dark-2">Arth Prakash Building, Sector - 29D,<br /> Chandigarh 160029</p>
-                </div>
-              </div>
-              <div className="col-md-4 col-lg-5">
-                <h5 className="footer-heading">Links</h5>
-                <div className="footer-links">
-                  <ul>
-                    <li> <a href="javascript://">Services</a> </li>
-                    <li> <a href="javascript://">Live Support</a> </li>
-                  </ul>
-                  <ul>
-                    <li> <a href="javascript://">Blog</a> </li>
-                    <li> <a href="javascript://">How we do it</a> </li>
-                  </ul>
-                  <ul>
-                    <li> <a href="javascript://">Support</a> </li>
-                    <li> <a href="javascript://">Get Free Quote</a> </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
-      </div>
-        
+        <Footer/>
+       
+        </div>
     )
 }
 
-export default Wseo
+export default Development
