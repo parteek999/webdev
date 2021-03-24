@@ -1,0 +1,123 @@
+
+
+ .inner-page-banner{
+  height:21.875rem;
+  position: relative;
+  z-index:1;
+   @media (max-width:1024px){
+      height:auto;
+      padding-bottom:4rem; 
+    }
+  @media (max-width:768px){
+     text-align:center;
+    }
+
+
+  .banner-img{
+    width:27.5rem;
+
+    @media (max-width:1024px){
+      width:auto;
+    }
+
+    @media (max-width:768px){
+      width:auto;
+      margin-bottom:3rem;
+      margin-top:3rem;
+    }
+
+  }
+ }
+
+
+
+ .ourdesign-section{
+  position: relative;
+  padding:14rem 0;
+
+  @media (max-width:768px){
+     padding:5rem 0;
+  }
+
+    .out-container-left{
+      position: absolute;
+      left:0;
+      top:10rem;
+
+      @media (max-width:1024px){
+        top:13rem;
+      }
+      @media (max-width:768px){
+        display:none;
+      }
+
+      .fig-blk{
+
+        width:96%;
+
+       @media (max-width:1366px){ 
+        width:88%;
+        }
+
+        @media (max-width:1024px){ 
+        width:68%;
+        }
+
+
+      }
+    }
+
+
+ }
+
+
+ .logo-wrap{
+height: 222px;
+width: 100%;
+max-width: 376px;
+border-radius: 11px;
+background-color: #0C0C0C;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom:30px; 
+
+@media (max-width:767px){
+  height:auto;
+  padding:2rem;
+}
+
+  figure{
+
+    figcaption{
+      color:$white-color;
+      font-size:1.563rem;
+      letter-spacing: 0.88px;
+      font-family:$roboto-bold;
+      margin-top:1.2rem; 
+
+      @media (max-width:767px){
+        font-size:1.2rem;
+      }
+
+    }
+
+  }
+ }
+
+ .contact-form-section{
+  background-image:url(../img/illust.png); 
+  background-repeat:no-repeat;  
+  background-position:right center; 
+  padding: 10rem 0; 
+
+  @media (max-width:1024px){
+    background-size:50%;
+  }
+
+  @media (max-width:767px){
+    background-image:none;
+    padding:5rem 0;
+  }
+  
+ }

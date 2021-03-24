@@ -1,0 +1,256 @@
+
+@font-face {
+    font-family: 'aileronregular';
+    src: url('../fonts/aileron-regular-webfont.woff2') format('woff2'),
+         url('../fonts/aileron-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'aileronsemibold';
+    src: url('../fonts/aileron-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/aileron-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'aileronbold';
+    src: url('../fonts/aileron-bold-webfont.woff2') format('woff2'),
+         url('../fonts/aileron-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aileronblack';
+    src: url('../fonts/aileron-black-webfont.woff2') format('woff2'),
+         url('../fonts/aileron-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'aileronheavy';
+    src: url('../fonts/aileron-heavy-webfont.woff2') format('woff2'),
+         url('../fonts/aileron-heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('../fonts/roboto-medium-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url('../fonts/roboto-black-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'montregular';
+    src: url('../fonts/fontfabric---mont-regular-webfont.woff2') format('woff2'),
+         url('../fonts/fontfabric---mont-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'montsemibold';
+    src: url('../fonts/fontfabric---mont-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/fontfabric---mont-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'montbold';
+    src: url('../fonts/fontfabric---mont-bold-webfont.woff2') format('woff2'),
+         url('../fonts/fontfabric---mont-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+p{
+   font-family:$aileron-regular;
+   font-size:1rem;  
+   margin:0;
+   padding:0;  
+}
+
+.p20-dark {
+   opacity: 0.65;
+    color:$white-color;
+    font-size: 20px;
+    font-family:$mont-regular;
+  line-height:1.5;
+}
+
+
+.p16{
+  font-size:1rem;
+  letter-spacing: 0.7px;
+   line-height:1.5;
+   color:$dark-color;
+}
+
+.p16-dark {
+   color:$gray-color;
+   font-size:1rem; 
+  letter-spacing: 0.7px;
+  line-height:1.5;
+}
+
+
+.p14{
+    opacity: 0.98;
+  color:$white-color; 
+  font-size: 14px;
+  letter-spacing: 0.49px;
+   line-height: 1.25;
+}
+.p14-dark {
+   font-family:$aileron-semi-bold;
+    color:$gray-color !important;
+      opacity: 0.2;
+   font-size:14px; 
+   letter-spacing: 0.61px;
+       line-height: 1.25;
+
+       @media (max-width:767px){
+        &.text-right{
+          text-align:center !important;
+        }
+       }
+}
+
+.p14-dark-2 {
+  
+  color:$gray-color-3 !important;
+    font-family:$aileron-semi-bold;
+  font-size: 14px; 
+  letter-spacing: 0.61px; 
+}
+
+
+.p12-dark {
+ 
+  opacity: 0.2;
+  color:$white-color; 
+  font-size: 12px;     
+  font-family:$aileron-semi-bold;
+  letter-spacing: 0.42px;
+  line-height: 15px;
+  line-height:1.3;
+
+
+}
+
+.p12-light {
+  opacity: 0.51;
+  color: #070707;
+  font-size: 12px;     
+  font-family:$aileron-semi-bold;
+  letter-spacing: 0.42px;
+  line-height:1.3;
+}
+
+
+  .heading-grp{
+            
+          h2{   
+             color:$white-color;
+              font-size:3.25rem;
+              letter-spacing:1.84px;
+              line-height:1.2;
+               margin-bottom:3.5rem;
+               font-family:$mont-bold;
+            }
+
+            @media (max-width:767px){ 
+            &.text-right{
+              text-align: center !important;
+            }
+          }
+
+    }
+
+
+
+.white-section{
+
+     .heading-grp, .heading-grp-2{
+
+        h2,h4{
+        color:$black-color-2;
+        }
+
+
+     }
+
+.heading-grp-2{
+            p{
+              opacity: 0.51;
+            color: #070707;
+            }
+          }
+}
+
+
+      .heading-grp-2{
+            
+          h4{   
+             color:$white-color;
+              font-size:2rem;
+              letter-spacing:1.84px;
+              line-height:1.2;
+               margin-bottom:4px;
+              font-family:$roboto-black;
+
+            }
+
+            p{
+            opacity: 0.2;
+          color:$white-color;
+           font-size:1rem;
+           letter-spacing: 0.57px;
+           font-family:$roboto-medium;
+            }
+
+    }

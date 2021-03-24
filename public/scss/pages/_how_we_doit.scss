@@ -1,0 +1,126 @@
+.inner-page-banner-2{
+    background-image: url(../img/how-we-doit.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    padding-bottom: 2.5rem;
+    
+    .fig-blk{
+        margin-top:8rem;
+        
+        @media (max-width:1024px){
+            margin-top:4rem;
+        }
+    }
+    
+    .inner-banner-bottom{
+        h4{
+              color:$yellow-color;
+            font-size: 1.375rem;
+        font-family:$mont-semi-bold;
+        }
+        
+        p{
+              opacity: 0.64;
+          color:$white-color; 
+          font-size:1.063rem;
+            font-family:$mont-semi-bold;
+        }
+        
+    }
+}
+
+
+.flow-section{
+    
+    h4{
+        font-size:2rem;
+        text-align: center;
+        color:$yellow-color;
+        font-family:$mont-semi-bold;
+    }
+    
+    ul{
+        
+        li{
+         color:$black-color;
+          font-size:1.75rem;
+          letter-spacing: 0;
+        margin-bottom:2rem;
+            
+            @media (max-width:1024px){
+                font-size:1.5rem;
+                
+            }
+            
+             @media (max-width:768px){
+                font-size:1rem;
+                
+            }
+            
+             @media (max-width:767px){
+                text-align:center;
+                 margin-bottom:1rem;
+                 
+                 span{
+                     display:none;
+                 }
+                
+            }
+        }
+    }
+    
+    ul.text-left{
+        margin-top:1rem;
+    }
+}
+.zig-section, .zag-section{
+   overflow:hidden;
+    
+    .container{
+        max-width:1600px;
+    }
+}
+
+.zig-section{
+    
+        .zig-zag-content{
+        padding-left:30px;
+        padding-right:7%;
+            
+            @media (max-width:768px){
+               padding-left:0;
+               padding-right:0; 
+                 margin-top:2rem;
+             margin-bottom:4rem;
+            }
+    }
+    
+    
+    .fig-blk{
+       margin-left:-15px;
+        float:left;
+    }
+}
+
+.zag-section{
+    
+     .zig-zag-content{
+        padding-left:7%;
+        padding-right:30px;
+         
+         @media (max-width:768px){
+               padding-left:0;
+               padding-right:0; 
+                margin-top:2rem;
+             margin-bottom:4rem;
+            }
+    }
+    
+    .fig-blk{
+        margin-right:-15px;
+        float:right;
+    }
+}
+
+

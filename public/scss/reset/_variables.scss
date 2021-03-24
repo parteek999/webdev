@@ -1,0 +1,131 @@
+$mont-regular:'montregular';
+
+.mont-regular{
+     font-family:$mont-regular;
+}
+
+$mont-semi-bold:'montsemibold';
+
+.mont-semi-bold{
+     font-family:$mont-semi-bold;
+}
+
+$mont-bold:'montbold';
+
+.mont-bold{
+     font-family:$mont-bold;
+}
+
+
+$aileron-regular:'aileronregular';
+
+.aileron-regular{
+ font-family:$aileron-regular;
+}
+
+$aileron-semi-bold:'aileronsemibold';
+
+.aileron-semi-bold{
+     font-family:$aileron-semi-bold;
+}
+
+$aileron-bold:'aileronbold';
+
+.aileron-bold{
+     font-family:$aileron-bold;
+}
+
+$aileron-heavy:'aileronheavy';
+
+.aileron-heavy{
+     font-family:$aileron-heavy;
+}
+
+
+$aileron-black:'aileronblack';
+
+.aileron-black{
+     font-family:$aileron-black;
+}
+
+
+$roboto-medium:'robotomedium';
+
+.roboto-medium{
+     font-family:$roboto-medium;
+}
+
+$roboto-bold:'robotobold';
+
+.roboto-bold{
+    font-family:$roboto-bold;
+}
+
+$roboto-black:'robotoblack';
+
+.roboto-black{
+     font-family:$roboto-black;
+}
+
+
+
+
+$white-color:#ffffff;
+
+.white-color{
+    color:$white-color !important;
+}
+
+$black-color:#000000;
+
+.black-color{
+    color:$black-color !important;
+}
+
+
+$black-color-2: #070707;
+
+.black-color-2{
+    color:$black-color-2 !important;
+}
+
+
+$yellow-color:#F5A623;
+
+.yellow-color{
+    color:$yellow-color;
+}
+
+$transition-speed:all 0.3s ease;
+.transition-speed{
+    transition:$transition-speed;
+}
+
+$gray-color:#969696; 
+
+.gray-color{
+    color:$gray-color !important;
+}
+
+$gray-color-2:#1B1B1B; 
+
+.gray-color-2{
+color:$gray-color-2 !important;
+
+}
+
+$gray-color-3:#A2A2A2; 
+
+.gray-color-3{
+color:$gray-color-3 !important;
+
+}
+
+
+$dark-color:#2C2C2C; 
+
+.dark-color{
+color:$dark-color;
+
+}
+

@@ -1,0 +1,47 @@
+.banner-img-5 {
+    top: -120px;
+    position: absolute;
+    right: -52px;
+    left: -84px;
+    
+    @media (max-width:768px){
+        
+        position:static;
+        
+    }
+}
+
+.design-blk {
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items:center;
+        margin-bottom: 4.5rem;
+    .black-border {
+        border: 4px solid #4A4A4A;
+    }
+
+    .yellow-border {
+        border: 4px solid $yellow-color;
+    }
+    
+       figcaption {
+        color: $black-color;
+        font-size: 21px;
+        font-family:$mont-semi-bold;
+           text-align: center;
+    }
+    
+    figure {
+        height: 166px;
+        width: 166px;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+            margin-bottom: 2.5rem;
+    }
+
+ 
+}

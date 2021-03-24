@@ -1,0 +1,73 @@
+.form-group{
+
+	margin-bottom:3rem;
+
+	.form-control{
+		height:auto;
+		border:none;
+		border-bottom:solid 2px $yellow-color;
+		border-radius:0;
+		  color:$dark-color;
+		  font-size: 14px;
+		  font-family:$aileron-semi-bold;
+		  letter-spacing: 0.61px;
+		  padding: 0 12px 10px;
+		  background-color:transparent;
+
+		&:focus{
+			box-shadow:none;
+		}
+	}
+    
+    textarea.form-control{
+        height:80px;
+        resize:none;
+    }
+    
+    select.form-control{
+        color:$white-color;
+    }
+
+}
+
+
+.dropdown{
+
+	&.bootstrap-select{
+		width:100% !important;
+
+			.btn-light{
+				background-color:transparent;
+				border-color:transparent; 
+				border-bottom:solid 2px $yellow-color;
+				border-radius:0;
+				 color:$dark-color;
+		  font-size: 14px;
+		  font-family:$mont-semi-bold;
+		  letter-spacing: 0.61px;
+		  padding: 0 12px 10px;
+			}
+	}
+}
+
+.bootstrap-select .dropdown-toggle:focus, 
+.bootstrap-select > select.mobile-device:focus + .dropdown-toggle {
+    outline:none !important;
+    outline:none !important;
+    outline-offset:0 !important;
+    box-shadow:none !important;
+}
+
+.form-group .dropdown.bootstrap-select .btn-light{
+        border: none !important;
+    padding: 0;
+    line-height: 16px;
+    color:$white-color;
+}
+
+.platform-child7{
+    
+    .form-group .form-control{
+        color:$white-color;
+    }
+}

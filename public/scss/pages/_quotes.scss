@@ -1,0 +1,164 @@
+.platform-colom1 {
+
+    figure {
+        margin-top: 30px;
+        padding: 69px 0;
+        border-radius: 14px;
+        min-height: 330px;
+        margin-bottom: 40px;
+        border: solid 3px transparent;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    &.active {
+
+
+        figure {
+            border-color: $yellow-color;
+            background: transparent;
+        }
+
+        .inner-heading-grp {
+
+            h3,
+            p {
+                color: $white-color;
+            }
+        }
+    }
+
+    .inner-heading-grp {
+        margin-bottom: 2.5rem;
+
+        h3 {
+            text-align: center;
+            font-size: 1.75rem;
+            color: #4A4A4A;
+            font-family: $mont-semi-bold;
+
+        }
+
+        p {
+            color: #4A4A4A;
+            text-align: center;
+        }
+
+    }
+}
+
+
+
+.min-footer {
+    float: left;
+    width: 100%;
+    margin-top: 49px;
+    position: fixed;
+    padding: 16px 0;
+    left: 0px;
+    bottom: 0;
+    box-shadow: 0 21px 40px #000000b3;
+    background: #0F0F0F;
+    z-index: 99;
+}
+
+.footer-colom1 {
+
+    button {
+        border-radius: 8px;
+        background-color: #1B1B1B !important;
+        border-color: #1B1B1B !important;
+        color: $white-color !important;
+        height: 32px;
+        line-height: 32px;
+        min-width: 105px;
+        padding: 0 24px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $aileron-heavy;
+        font-size: 13px;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: $yellow-color !important;
+            color: $white-color;
+            outline: none !important;
+            box-shadow: none !important;
+
+        }
+    }
+
+    ul {
+
+        @media (max-width:767px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        li {
+            float: left;
+            margin: 0 8px;
+
+            .fa {
+                padding-left: 16px;
+            }
+
+            a {
+                color: #4A4A4A;
+                font-size: 13px;
+                font-family: $mont-semi-bold;
+
+                &.active {
+                    color: $white-color;
+                }
+
+            }
+
+        }
+    }
+    
+    &.text-right{
+        
+        @media (max-width:767px){
+            
+        text-align:center !important;
+            margin:24px 0 0;
+            
+        }
+    }
+
+}
+
+.platform-heading {
+    margin: 1.875rem 0 5rem;
+    text-align: center;
+
+    h2 {
+        font-family: $mont-regular;
+        font-size: 2.438rem;
+        color: $white-color;
+        margin-bottom: 2.5rem;
+    }
+
+    h6 {
+        font-family: $mont-regular;
+        font-size: 1.313rem;
+        color: $white-color;
+    }
+}
+
+.btn.disabled,
+.btn:disabled {
+    cursor: not-allowed;
+}
+
+.platform-child7 {
+    margin-bottom: 5rem;
+    @media (max-width:767px){
+        
+        margin-bottom:15rem;
+        
+    }
+}

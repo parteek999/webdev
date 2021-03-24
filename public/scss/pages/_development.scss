@@ -1,0 +1,16 @@
+.banner-img-4{
+    margin-top:-122px;
+    text-align: right;
+    
+    @media (max-width:768px){
+        margin-top: -57px;
+        text-align: center;
+        margin-bottom: 4rem;
+        
+    }
+    
+    @media (max-width:1024px){
+        
+        margin-top:0; 
+    }
+}
