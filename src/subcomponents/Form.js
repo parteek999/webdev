@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios';
+import { createBrowserHistory } from 'history';
+const history = createBrowserHistory();
+
 
 export default class Form extends Component {
     constructor(props) {
@@ -23,14 +26,23 @@ export default class Form extends Component {
     }
 
 
-    fileUploadHandler = () => {
-        const { fname, lname, email,about } = this.state;
-        axios.post("http://localhost:8000/formsubmit", { fname, lname, email ,about})
+    fileUploadHandler = (e) => {
+        e.preventDefault()
+        const { fname,phoneNumber, email,about } = this.state;
+        const data = new FormData()
+              data.append("fname",fname)
+              data.append("email",email)
+              data.append("about",about)
+              data.append("phoneNumber",phoneNumber)
+
+        console.log("22222222222222",fname)
+        axios.post("http://localhost:8000/user/formSubmit", data)
           .then(response => {
             console.log("11111111111111111111111", response);
-            if (response.data.statusCode == 200) {
-              console.log("11111111111111111111111", this);
-              this.props.history.push('/')
+            if (response.data.statusCode === 200) {
+              console.log("11111111111111111111111ffdsfsfsrsa", this);
+              history.push('/')
+
             }
           })
           .catch(error => {
@@ -64,12 +76,13 @@ export default class Form extends Component {
                             </div>
                         </div>
                         <div class="col-sm-6">
-                            <select name="about"
+                            <select name="about" 
                             value={about}
                             onChange={this.handleChange}
                             // className="selectpicker"
                             >
-                                <option>What is app 3333 about?</option>
+                                <option value="" selected disabled hidden>Choose here</option>
+                                <option >What is app 3333 about?</option>
                                 <option>What is app 111 about?</option>
                                 <option>What is app 222222 about?</option>
                             </select>
@@ -78,7 +91,7 @@ export default class Form extends Component {
                         <div class="col-12">
 
                             <div class="btn-blk text-center">
-                                <button class="btn btn-primary btn-lg" onClick={() => { this.fileUploadHandler() }} >Submit</button>
+                                <button class="btn btn-primary btn-lg" onClick={(e) => { this.fileUploadHandler(e)}} >Submit</button>
                             </div>
 
                         </div>

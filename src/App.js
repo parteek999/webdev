@@ -13,7 +13,7 @@ import Howwedoit from './components/Howwedoit';
 import Datacentre from './components/Datacentre';
 import Development from './components/Development';
 import AOS from 'aos';
-
+const history = createBrowserHistory();
 
 
 class App extends Component {
@@ -38,7 +38,7 @@ class App extends Component {
      {/* <Wui_ux/> */}
      {/* <Web_design/> */}
 
-        <Router>
+        <Router history={history}>
           <Switch>
               <Route exact path="/" name="Windex Page" render={props => <Windex {...props} />} />
               <Route exact path="/Wmobile" name="Wmobile" render={props => <Wmobile {...props} />} />
