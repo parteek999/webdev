@@ -1,10 +1,28 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import { createBrowserHistory } from 'history';
+import validator from 'validator';
 const history = createBrowserHistory();
+var emailCheck = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+var phone = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im
+const showMessage = (message) => {
 
+    alert(message);
+};
+const validatePhoneNumber = (phoneNumber) => {
+    if (
+        phoneNumber.length < 10 ||
+        phoneNumber.length > 10
+    ) {
+        const isValidPhoneNumber = validator.isMobilePhone(phoneNumber)
+        return (isValidPhoneNumber)
+    }
+
+
+}
 
 export default class Form extends Component {
+
     constructor(props) {
         super(props);
         this.state = {
@@ -15,45 +33,83 @@ export default class Form extends Component {
 
         }
     }
+
+    // handleChange = (e) => {
+
+
+    //     this.setState({ [e.target.name]: e.target.value });
+    //     console.log("111111111", this.state.fname)
+
+    // }
     handleChange = (e) => {
+        e.preventDefault()
+
         this.setState({ [e.target.name]: e.target.value });
         console.log("111111111", this.state.fname)
+    }
+    checkvalue = () => {
+        const { fname, phoneNumber, email, about } = this.state;
+        console.log("check value")
+
 
     }
-   
-    
-    componentDidMount() { 
+
+
+    componentDidMount() {
     }
 
 
     fileUploadHandler = (e) => {
         e.preventDefault()
-        const { fname,phoneNumber, email,about } = this.state;
-        const data = new FormData()
-              data.append("fname",fname)
-              data.append("email",email)
-              data.append("about",about)
-              data.append("phoneNumber",phoneNumber)
 
-        console.log("22222222222222",fname)
-        axios.post("http://localhost:8000/user/formSubmit", data)
-          .then(response => {
-            console.log("11111111111111111111111", response);
-            if (response.data.statusCode === 200) {
-              console.log("11111111111111111111111ffdsfsfsrsa", this);
-              history.push('/')
+        const { fname, phoneNumber, email, about } = this.state;
+        console.log("sdsd", fname)
 
-            }
-          })
-          .catch(error => {
-            console.log(error);
-          })
-      }
+
+        if (fname === "") {
+            console.log("name check")
+            showMessage("Enter name");
+        } else if (email === "") {
+            showMessage("Enter email address");
+        } else if (emailCheck.test(email) === false) {
+            showMessage("Enter Valid Email");
+        } else if (about === "") {
+            showMessage("Enter about");
+        } else if (phone.test(phoneNumber) === false) {
+            showMessage("Enter valid phonenumber");
+        }
+        // } else if (validatePhoneNumber(phoneNumber) === false) {
+
+        //     showMessage("Enter correct phone number");
+        // }
+        else {
+            const data = new FormData()
+            data.append("fname", fname)
+            data.append("email", email)
+            data.append("about", about)
+            data.append("phoneNumber", phoneNumber)
+
+            console.log("22222222222222", fname)
+            axios.post("http://localhost:8000/user/formSubmit", data)
+                .then(response => {
+                    console.log("11111111111111111111111", response);
+                    if (response.data.statusCode === 200) {
+                        console.log("11111111111111111111111ffdsfsfsrsa", this);
+                        history.push({ pathname: '/' })
+                        history.go('/');
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                })
+        }
+
+    }
 
     render() {
         console.log(this.state)
 
-        const { fname, email, phoneNumber,about } = this.state;
+        const { fname, email, phoneNumber, about } = this.state;
 
         return (
             <div>
@@ -76,9 +132,9 @@ export default class Form extends Component {
                             </div>
                         </div>
                         <div class="col-sm-6">
-                            <select name="about" 
-                            value={about}
-                            onChange={this.handleChange}
+                            <select name="about"
+                                value={about}
+                                onChange={this.handleChange}
                             // className="selectpicker"
                             >
                                 <option value="" selected disabled hidden>Choose here</option>
@@ -91,7 +147,7 @@ export default class Form extends Component {
                         <div class="col-12">
 
                             <div class="btn-blk text-center">
-                                <button class="btn btn-primary btn-lg" onClick={(e) => { this.fileUploadHandler(e)}} >Submit</button>
+                                <button class="btn btn-primary btn-lg" onClick={(e) => { this.fileUploadHandler(e) }} >Submit</button>
                             </div>
 
                         </div>

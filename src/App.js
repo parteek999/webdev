@@ -13,45 +13,41 @@ import Howwedoit from './components/Howwedoit';
 import Datacentre from './components/Datacentre';
 import Development from './components/Development';
 import AOS from 'aos';
+import NotFound from '../src/pages/page404'
 const history = createBrowserHistory();
 
 
 class App extends Component {
-  componentDidMount(){
+  componentDidMount() {
 
     AOS.init({
-      
-      duration : 2000
+      duration: 2000
     });
   }
+  
   render() {
     return (
       <div>
 
-      {/* <Development/> */}
-      {/* <Datacentre/> */}
-      {/* <Howwedoit/> */}
-      {/* <Windex/> */}
-      {/* <Wmobile/> */}
-      {/* <Wquotes/> */}
-     {/* <Wseo/> */}
-     {/* <Wui_ux/> */}
-     {/* <Web_design/> */}
 
         <Router history={history}>
           <Switch>
-              <Route exact path="/" name="Windex Page" render={props => <Windex {...props} />} />
-              <Route exact path="/Wmobile" name="Wmobile" render={props => <Wmobile {...props} />} />
-              <Route exact path="/Wquotes" name="Wmobile" render={props => <Wquotes {...props} />} />
-              <Route exact path="/Web_design" name="Web_design " render={props => <Web_design {...props} />} />
-              <Route exact path="/Wui_ux" name="Wui_ux " render={props => <Wui_ux {...props} />} />
-              <Route exact path="/Wseo" name="Wseo " render={props => <Wseo {...props} />} />
-              <Route exact path="/Datacentre" name="Datacentre " render={props => <Datacentre {...props} />} />
-              <Route exact path="/Development" name="Development " render={props => <Development {...props} />} />
-              <Route exact path="/Howwedoit" name="Howwedoit " render={props => <Howwedoit {...props} />} />
+            <Route exact path="/" name="Windex Page" render={props => <Windex {...props} />} />
+            <Route path="/Wmobile" name="Wmobile" render={props => <Wmobile {...props} />} />
+            <Route path="/Wquotes" name="Wmobile" render={props => <Wquotes {...props} />} />
+            <Route path="/Web_design" name="Web_design " render={props => <Web_design {...props} />} />
+            <Route path="/Wui_ux" name="Wui_ux " render={props => <Wui_ux {...props} />} />
+            <Route path="/Wseo" name="Wseo " render={props => <Wseo {...props} />} />
+            <Route path="/Datacentre" name="Datacentre " render={props => <Datacentre {...props} />} />
+            <Route path="/Development" name="Development " render={props => <Development {...props} />} />
+            <Route path="/Howwedoit" name="Howwedoit " render={props => <Howwedoit {...props} />} />
+            {/* <Route path="" render={<NotFound/>} /> */}
+            <Route component={NotFound} />
+            {/* <Route component={NotFound} /> // without path */}
+
           </Switch>
         </Router>
-      </div> 
+      </div>
     )
   }
 
